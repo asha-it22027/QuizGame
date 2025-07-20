@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="356.0" prefWidth="494.0" spacing="15.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuizController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label fx:id="questionLabel" alignment="CENTER" prefHeight="26.0" prefWidth="389.0" text="                                         Question here" wrapText="true">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+
+    <RadioButton fx:id="opt1" alignment="TOP_LEFT" text="Option 1" />
+    <RadioButton fx:id="opt2" alignment="TOP_LEFT" text="Option 2" />
+    <RadioButton fx:id="opt3" alignment="TOP_LEFT" text="Option 3" />
+    <RadioButton fx:id="opt4" alignment="TOP_LEFT" text="Option 4" />
+
+    <Label fx:id="timerLabel" text="Time Left: 10" />
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#handleNext" style="-fx-background-color: #0288D1;" text="Next">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button onAction="#handleExit" style="-fx-background-color: #F44336;" text="Exit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+    </HBox>
+</VBox>
